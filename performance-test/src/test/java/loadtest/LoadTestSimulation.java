@@ -1,11 +1,5 @@
 package loadtest;
 
-//import static io.gatling.javaapi.core.CoreDsl.*;
-//import static io.gatling.javaapi.http.HttpDsl.*;
-//
-//import io.gatling.javaapi.core.*;
-//import io.gatling.javaapi.http.*;
-
 import io.gatling.javaapi.core.ChainBuilder;
 import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
