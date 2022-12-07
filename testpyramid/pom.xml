@@ -17,8 +17,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
 		<java.version>17</java.version>
-		<gatling.version>3.8.4</gatling.version>
-		<gatling-maven-plugin.version>4.2.7</gatling-maven-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,14 +46,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- load testing with Gatling -->
-		<dependency>
-			<groupId>io.gatling.highcharts</groupId>
-			<artifactId>gatling-charts-highcharts</artifactId>
-			<version>${gatling.version}</version>
-			<scope>test</scope>
-		</dependency>
-
 	</dependencies>
 	<build>
 		<plugins>
@@ -66,14 +56,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>io.gatling</groupId>
-				<artifactId>gatling-maven-plugin</artifactId>
-				<version>${gatling-maven-plugin.version}</version>
-				<configuration>
-					<simulationClass>loadtest.LoadTestSimulation</simulationClass>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
